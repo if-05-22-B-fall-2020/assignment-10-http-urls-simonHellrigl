@@ -28,6 +28,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class HttpUrlCheckerTest {
 
+
+
     @Test
     public void testShortestPossible() {
         checkRegex("http://b.com");
