@@ -30,7 +30,7 @@ public class HttpUrlChecker{
     public static Matcher getMatcher(String httpString){
 
 
-        Pattern pattern = Pattern.compile("^http://www.[a-z]*.com");
+        Pattern pattern = Pattern.compile("http://www\\.([a-z]+(\\.|-))+((com)|(ac\\.at))");
         Matcher matcher = pattern.matcher(httpString);
 
         return matcher;
